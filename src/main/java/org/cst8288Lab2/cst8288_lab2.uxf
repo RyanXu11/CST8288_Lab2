@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>10</y>
+      <w>150</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Lab2Starter
+--
+_+main(args String[])_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>800</x>
+      <y>730</y>
+      <w>200</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Name: Ryan Xu
+
+CST8288_031 Assignment2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>920</x>
+      <y>400</y>
+      <w>170</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>org.cst8288.Lab2.dto
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>760</y>
+      <w>350</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>fg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>120</y>
+      <w>230</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>StudentDao
+--
++addStudent(student Student):void
++getStudent(studentId int): Student
++update(student Student):void
++delete(student Student):void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>260</y>
+      <w>230</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>StudentDaoImpl
+--
++addStudent(student Student):void
++getStudent(studentId int): Student
++update(student Student):void
++delete(student Student):void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>210</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1090</x>
+      <y>70</y>
+      <w>260</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>DataSource
+--
+_- connection: Connection_
+--
+-DataSource()
+_getConnection(): Connection_
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>120</y>
+      <w>230</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>CourseDao
+--
++addCourse(course Course):void
++getCourse(courseId int): Course
++update(course Course):void
++delete(course Course):void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>260</y>
+      <w>230</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>CourseDaoImpl
+--
++addCourse(course Course):void
++getCourse(courseId int): Course
++update(course Course):void
++delete(course Course):void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>610</x>
+      <y>260</y>
+      <w>410</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>StudentCourseDaoImpl
+--
++addStudentCourse(studentCourse StudentCourse):void
++getStudentCourse(studentId int, courseId int): StudentCourse
++update(studentCourse StudentCourse):void
++delete(studentCourse StudentCourse):void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>610</x>
+      <y>120</y>
+      <w>410</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>StudentCourseDao
+--
++addStudentCourse(studentCourse StudentCourse):void
++getStudentCourse(studentId int, courseId int): StudentCourse
++update(studentCourse StudentCourse):void
++delete(studentCourse StudentCourse):void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>210</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>210</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>440</y>
+      <w>280</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Student
+--
+-studentId int
+-firstName String
+-lastName String
+--
++Student(studentId, firstName, lastName)
++Getter
++Setter</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>440</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Course
+--
+-courseId String
+-courseName String
+--
++Course(courseId, courseName)
++Getter
++Setter</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>610</x>
+      <y>440</y>
+      <w>310</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>studentCourse
+--
+-studentId int
+-courseId String
+-term Term
+-year int
+--
++studentCourse(studentId, courseId, term, year)
++Getter
++Setter</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>960</x>
+      <y>440</y>
+      <w>120</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Term
+--
+WINTER: 1
+SUMMER: 2
+FALL: 3
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>430</y>
+      <w>1050</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>fg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>350</y>
+      <w>30</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
